@@ -182,7 +182,7 @@ ul.nav a:hover, ul.nav a:active, ul.nav a:focus { /* esto cambia el color de fon
   margin:1px;
   margin-left:0;
   font:18px Verdana;
-  color:#FFF;
+  color:red;
   background:#444;
 }
 .usual ul a:hover {
