@@ -1,10 +1,12 @@
 @charset "utf-8";
 body {
-	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	
 	background: white;
 	margin: 0 auto;
 	padding: 0;
 	color: #000;
+	text-align: justify;
+	font-family: arial;
 }
 
 /* ~~ Selectores de elemento/etiqueta ~~ */
@@ -12,27 +14,19 @@ ul, ol, dl { /* Debido a las diferencias existentes entre los navegadores, es re
 	padding: 0;
 	margin: 0;
 }
-h1, h2, h3, h4, h5, h6, p {
+h1, h2, h3, h5, h6{
 	margin-top: 0;	 /* la eliminación del margen superior resuelve un problema que origina que los márgenes escapen de la etiqueta div contenedora. El margen inferior restante lo mantendrá separado de los elementos de que le sigan. */
 	padding-right: 15px;
 	padding-left: 15px; /* la adición de relleno a los lados del elemento dentro de las divs, en lugar de en las divs propiamente dichas, elimina todas las matemáticas de modelo de cuadro. Una div anidada con relleno lateral también puede usarse como método alternativo. */
+	
+
+
 }
 a img { /* este selector elimina el borde azul predeterminado que se muestra en algunos navegadores alrededor de una imagen cuando está rodeada por un vínculo */
 	border: none;
 }
 
 /* ~~ La aplicación de estilo a los vínculos del sitio debe permanecer en este orden (incluido el grupo de selectores que crea el efecto hover -paso por encima-). ~~ */
-a:link {
-	color: #42413C;
-	text-decoration: underline; /* a no ser que aplique estilos a los vínculos para que tengan un aspecto muy exclusivo, es recomendable proporcionar subrayados para facilitar una identificación visual rápida */
-}
-a:visited {
-	color: #6E6C64;
-	text-decoration: underline;
-}
-a:hover, a:active, a:focus { /* este grupo de selectores proporcionará a un usuario que navegue mediante el teclado la misma experiencia de hover (paso por encima) que experimenta un usuario que emplea un ratón. */
-	text-decoration: none;
-}
 
 /* ~~ Este contenedor de anchura fija rodea a todas las demás divs ~~ */
 .container {
@@ -60,7 +54,44 @@ a:hover, a:active, a:focus { /* este grupo de selectores proporcionará a un usu
 color: rgb(14, 105, 144);
 }
 
+#map_canvas {
+        width: 450px;
+        height: 350px;
+        margin-right: 50px;
+        margin-left: 0px;
+        padding-top: 0px;
+        padding-left: 0px;
+        border-top: 0px;
+        display: inline-block;
 
+      
+      }
+
+#formulario{
+	text-align: left;
+	border-radius: 10px;
+	display: inline-block;
+	vertical-align: center;
+	/*background-color: rgb(131,190,225);*/
+	background: -webkit-linear-gradient(#A9E2F3, #F2F2F2); /* For Safari 5.1 to 6.0 */
+background: -o-linear-gradient(#A9E2F3, #F2F2F2); /* For Opera 11.1 to 12.0 */
+background: -moz-linear-gradient(#A9E2F3, #F2F2F2); /* For Firefox 3.6 to 15 */
+background: linear-gradient(#CEECF5, #FAFAFA); /* Standard syntax */
+color: grey;
+
+}
+.formcon{
+	border-radius: 8px;
+	border: 1px solid dotted dashed groove #FFF;
+	background-color: #CEECF5;
+}
+#formulario textarea{
+	border-color: #FAFAFA;
+	border-style: solid dotted groove;
+	border-width: 1px;
+	border-top-width: 2px;
+	
+}
 
 
 /* ~~ Estas son las columnas para el diseño. ~~ 
@@ -78,31 +109,51 @@ color: rgb(14, 105, 144);
 .content {
 
 	padding: 10px 0;
-	width: 800px;
+	width: 80%;
 	/*float: left;*/
 	margin: 0 auto;
 }
 #varios {
-	width: 600px;
+	width: 70%;
 	margin: 0 auto;
-	background: red;
-	border: 1px solid red;
+	
+	
+	display: block;
 
 }
-.sidebar2 {
+#sidebar2 {
 	float: left;
-	width:42%;
+	width:40%;
+	background-image:url(img-temp/cotizacion.png);
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	padding: 10px 10px;
+	/*margin: 0 auto;*/
 	
+	margin-right: 6%;
+	height: 318px;
+	
+	margin-bottom: 5%;
+	display: inline-block;
+	}
+	#sidebar2 span{
+	background-color: rgba(51,51,51,0.4);
+	}
+	.tras{
+		width: 100%;
+	}
+	#sidebar3 {
+	float: right;
+	width:40%;
 	background: #EADCAE;
 	padding: 10px 10px;
 	/*margin: 0 auto;*/
 	margin-top: 5%;
 	margin-right: 2%;
-	margin-left: 2%;
 	margin-bottom: 5%;
-	
-
-}
+	display: inline-block;
+    vertical-align: top;
+	}
 
 /* ~~ Este selector agrupado da espacio a las listas del área de .content ~~ */
 .content ul, .content ol { 
@@ -178,31 +229,36 @@ ul.nav a:hover, ul.nav a:active, ul.nav a:focus { /* esto cambia el color de fon
 .usual ul a {
   display:block;
   padding:6px 10px;
-  text-decoration:none!important;
+  text-decoration:none;
   margin:1px;
   margin-left:0;
-  font:18px Verdana;
-  color:#FFF;
-  background:#444;
+  font-size:18px;
+  font-family:'UniversLTW01-57Condense 723821';
+  line-height: 17px;
+  text-transform: uppercase;
+  color:black;
+  background:white;
+  /*border-style: double;
+  border-color:#707374;*/
+  
 }
 .usual ul a:hover {
-  color:#FFF;
-  background:#111;
+  color:#707374;
+  background:white;
+  
   }
 .usual ul a.selected {
   margin-bottom:0;
-  color:#000;
-  background:snow;
-  border-bottom:1px solid snow;
+  color:#707374;
+  background:white;
   cursor:default;
+  
   }
 .usual div {
   padding:10px 10px 8px 10px;
-  *padding-top:3px;
-  *margin-top:-15px;
-  clear:left;
-  background:snow;
-  font:10pt Georgia;
+   /*clear:left;*/
+  /*background:snow; removed ocasionally for the map visibility */
+  
 }
 .usual div a { color:#000; font-weight:bold; }
 
@@ -211,3 +267,11 @@ ul.nav a:hover, ul.nav a:active, ul.nav a:focus { /* esto cambia el color de fon
 #usual2 a:hover { background:#000; }
 #usual2 a.selected { background:snow; }
 #tabs3 { background:#FF9; }
+#tab5{
+
+	width: 1000px;
+}
+ #tab1 p{
+ 	font-family:"UniversLTW01-67BoldCn";
+ 	font-size: 16px;
+ }
