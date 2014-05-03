@@ -21,13 +21,14 @@
 .rslides li:first-child {
   position: relative;
   display: block;
-  float: left;
+  float: center;
   }
 
 .rslides img {
   display: block;
   height: auto;
-  float: left;
+  float: center;
   width: 100%;
   border: 0;
+  margin: 0 auto;
   }

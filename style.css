@@ -42,16 +42,33 @@ a img { /* este selector elimina el borde azul predeterminado que se muestra en 
 	text-align: center;
 	
 }
- #logo, #slogan{
+ #logo, #slogan1{
  	display: inline-block;
+ 	margin-bottom: 2%;
  }
 
- #slogan {
+ #slogan{
   margin: 20px 20px 0;
   vertical-align: text-bottom;
-  font-size: 48px;
-  font-family: 'Playfair Display SC', serif;
+  font-size: 60px;
+  font-family: 'Engagement', cursive;
 color: rgb(14, 105, 144);
+display: inline-block;
+}
+
+#slogan1 {
+	
+	display: inline-block;
+	vertical-align: bottom;
+	margin-bottom: 4%;
+	
+}
+
+#slogan1 img{
+max-width: 100%;
+	height: auto;
+	width: auto;
+	
 }
 
 #map_canvas {
@@ -161,30 +178,6 @@ color: grey;
 }
 
 /* ~~ Los estilos de lista de navegación (pueden eliminarse si opta por usar un menú desplegable predefinido como el de Spry) ~~ */
-ul.nav {
-	list-style: none; /* esto elimina el marcador de lista */
-	border-top: 1px solid #666; /* esto crea el borde superior de los vínculos (los demás se sitúan usando un borde inferior en el LI) */
-	margin-bottom: 15px; /* esto crea el espacio entre la navegación en el contenido situado debajo */
-
-}
-ul.nav li {
-	border-bottom: 1px solid #666;
-	display:inline;
- /* esto crea la separación de los botones */	
-
-
-}
-ul.nav a, ul.nav a:visited { /* al agrupar estos selectores, se asegurará de que los vínculos mantengan el aspecto de botón incluso después de haber sido visitados */
-	padding: 5px 5px 5px 15px;
-	display: inline; /* esto da al anclaje propiedades de bloque, de manera que llene todo el LI en el que está contenido para que toda el área reaccione a un clic de ratón. */
-	width: 160px;  /*esta anchura hace que se pueda hacer clic en todo el botón para IE6. Puede eliminarse si no es necesario proporcionar compatibilidad con IE6. Calcule la anchura adecuada restando el relleno de este vínculo de la anchura del contenedor de barra lateral. */
-	text-decoration: none;
-	background: #C6D580;
-}
-ul.nav a:hover, ul.nav a:active, ul.nav a:focus { /* esto cambia el color de fondo y del texto tanto para usuarios que naveguen con ratón como para los que lo hagan con teclado */
-	background: #ADB96E;
-	color: #FFF;
-}
 
 /* ~~ Los estilos de pie de página ~~ */
 .footer {
@@ -211,67 +204,8 @@ ul.nav a:hover, ul.nav a:active, ul.nav a:focus { /* esto cambia el color de fon
 }
 
 /*ESTILOS DEL MENU JQUERY*/
-.usual {
-  background:white;
-  color:#111;
- 
-  max-width:1000px;
-  border-bottom:1px solid #222;
-  margin:0 auto;
-}
-.usual li { 
-  list-style:none; 
-  float:left; 
-  width: 200px; 
-  height: 40px;
-  text-align: center; 
-}
-.usual ul a {
-  display:block;
-  padding:6px 10px;
-  text-decoration:none;
-  margin:1px;
-  margin-left:0;
-  font-size:18px;
-  font-family:'UniversLTW01-57Condense 723821';
-  line-height: 17px;
-  text-transform: uppercase;
-  color:black;
-  background:white;
-  /*border-style: double;
-  border-color:#707374;*/
-  
-}
-.usual ul a:hover {
-  color:#707374;
-  background:white;
-  
-  }
-.usual ul a.selected {
-  margin-bottom:0;
-  color:#707374;
-  background:white;
-  cursor:default;
-  
-  }
-.usual div {
-  padding:10px 10px 8px 10px;
-   /*clear:left;*/
-  /*background:snow; removed ocasionally for the map visibility */
-  
-}
-.usual div a { color:#000; font-weight:bold; }
 
-#usual2 { background:#0A0A0A; border:1px solid #1A1A1A; }
-#usual2 a { background:#222; }
-#usual2 a:hover { background:#000; }
-#usual2 a.selected { background:snow; }
-#tabs3 { background:#FF9; }
 #tab5{
 
 	width: 1000px;
 }
- #tab1 p{
- 	font-family:"UniversLTW01-67BoldCn";
- 	font-size: 16px;
- }

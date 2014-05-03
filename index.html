@@ -2,16 +2,22 @@
 <html>
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <!-- <meta name="viewport" content="width=device-width, minimum-scale=1,maximum-scale=2, user-scalable=yes">-->
+  <meta name="viewport" content="width=device-width, minimum-scale=1,maximum-scale=2, user-scalable=yes">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="author" content="">
   <title>Aston House College</title>
   <link rel="stylesheet" href="css/responsiveslides.css">
   <link rel="stylesheet" href="themes.css">
   <link href="style.css" rel="stylesheet" type="text/css">
+  <!--BOOTSTRAP CSS-->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/navbar.css" rel="stylesheet">
 
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
   <script src="scripts/responsiveslides.min.js"></script>
   <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
-  <script type="text/javascript" src="scripts/jquery.idTabs.min.js"></script>
+  
 <!--<script>
 
 function initialize() {
@@ -47,15 +53,15 @@ mapTypeId: google.maps.MapTypeId.ROADMAP
 
     $(document).ready(function () {
       $("#slider1").responsiveSlides({
-        auto: true,
+        auto: false,
         pager: true,
-        nav: true,
+        nav: false,
         speed: 500,
         maxwidth:1000,
         namespace: "centered-btns"
       });
 
-      $("#usual1 ul").idTabs();   
+      
 
       $('.tab-content').not(':first').hide();
       $('.tab').click(function(e){
@@ -77,73 +83,90 @@ mapTypeId: google.maps.MapTypeId.ROADMAP
     
     </script>
 
-    <link href='http://fonts.googleapis.com/css?family=Playfair+Display+SC' rel='stylesheet' type='text/css'>
-  </head>
+    <!--<link href='http://fonts.googleapis.com/css?family=Playfair+Display+SC' rel='stylesheet' type='text/css'>-->
+<link href='http://fonts.googleapis.com/css?family=Engagement' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Lovers+Quarrel' rel='stylesheet' type='text/css'>
 
-  <body onload="initialize()">
+</head>
 
-    <div class="container">
-      <div class="header">
-        <div id="logo"><a href="#"><img src="images/otro1.jpg" alt="Insertar logotipo aquí" name="Insert_logo" width="178" height="164" id="Insert_logo" style="background: #C6D580; display:block;" /></a> 
+<body onload="initialize()">
+
+  <div class="container">
+      
+        <div class="header">
+          <div id="logo"><a href="#"><img src="images/otro1.jpg" alt="Insertar logotipo aquí" name="Insert_logo" width="178" height="164" id="Insert_logo" style="background: #C6D580; display:block;" /></a> 
+          </div>
+          <div id="slogan1">
+         
+         <img src="images/title.png">
+         </div>
+        
+
+
         </div>
-        <div id ="slogan"><p>Estudios en el Exterior</p>
-        </div>
-        <!-- end .header -->
-      </div>
 
 
-
-      <div id="wrapper">
-        <!-- SLIDESHOW -->
-        <div class="rslides_container">
+    <!-- SLIDESHOW -->
+        <div id="wrapper">
+         <div class="rslides_container">
           <ul class="rslides" id="slider1">
-            <li><img src="images/1.jpg" alt=""></li>
-            <li><img src="images/2.jpg" alt=""></li>
-            <li><img src="images/3.jpg" alt=""></li>
+            <li><img src="images/1.png" alt=""></li>
+            <li><img src="images/2.png" alt=""></li>
+            <li><img src="images/3.png" alt=""></li>
+            <li><img src="images/4.jpg" alt=""></li>
           </ul>
-        <!--<a href="#" class="callbacks_nav callbacks1_nav prev">Previous</a>
-        <a href="#" class="callbacks_nav callbacks1_nav next">Next</a>-->
-      </div>
-    </div> <!--cerrando wrapper de prueba-->
+          </div>
+        </div> 
     <!-- SLIDESHOW-->
 
 
     <!-- NAVIGATION MENU -->
-    <div id="usual1" class="usual"> 
-      <ul> 
-        <li><a href="#tab1" class="selected">INICIO</a></li> 
-        <li><a href="#tab2">SERVICIOS</a></li> 
-        <li><a href="#tab3">INSTITUCIONES</a></li> 
-        <li><a href="#tab4">CONVENIOS</a></li> 
-        <li><a href="#tab5" class="tab">CONTACTANOS</a></li> 
-      </ul> 
-      <div id="tab1" style="display:none;"><p>TITULO</p>
-        <p>STANTON SCHOOL OF ENGLISH, nació en Lóndres Inglaterra, en el año de 1976 como una escuela de enseñanza del idioma inglés para extranjeros y gracias a su excelente operación logró conseguir el reconocimiento del British Council y  Arels en el Reino Unido y en Colombia por el Icetex </p>
-        <p>Nuestra empresa tiene presencia en el país desde hace 16 años  en la ciudad de Bogotá y desde hace 5 años en la ciudad de Popayán. </p>
-        <p> Hoy, STANTON SCHOOL OF ENGLISH, ha extendido sus servicios para aquellos estudiantes que quieren continuar sus estudios de idiomas o universitarios en el exterior, ampliando su cobertura, ofreciendo así estadías académicas en varios países del mundo como Estados Unidos, Canadá, Australia, Nueva Zelanda, Italia, Alemania, Sud África, Inglaterra, Malta, entre otros. América Latina, es a mediano plazo un proyecto a realizar.
-        </p>
-      </div> 
-      <div id="tab2" style="display:none;">More content in tab 2. <p>Tenga en cuenta que la CSS para estos diseños cuenta con numerosos comentarios. Si realiza la mayor parte de su trabajo en la vista Diseño, eche un vistazo al código para obtener sugerencias sobre cómo trabajar con la CSS para diseños fijos. Puede quitar estos comentarios antes de lanzar el sitio. Para obtener más información sobre las técnicas usadas en estos diseños CSS, lea este artículo en el Centro de desarrolladores de Adobe:</p>
-        <p>Dado que todas las columnas son flotantes, este diseño usa una declaración clear:both en la regla .footer. Esta técnica de borrado fuerza a .container a conocer dónde terminan las columnas con el fin de mostrar cualquier borde o color de fondo que coloque en .container. Si su diseño exige la eliminación de .footer de .container, deberá usar un método de borrado diferente. El más fiable consiste en añadir una &lt;br class=&quot;clearfloat&quot; /&gt; o &lt;div  class=&quot;clearfloat&quot;&gt;&lt;/div&gt; tras la última columna flotante (pero antes de que se cierre .container). Esto proporcionará el mismo efecto de borrado.</p>
-        <p>Tenga en cuenta que la CSS para estos diseños cuenta con numerosos comentarios. Si realiza la mayor parte de su trabajo en la vista Diseño, eche un vistazo al código para obtener sugerencias sobre cómo trabajar con la CSS para diseños fijos. Puede quitar estos comentarios antes de lanzar el sitio. Para obtener más información sobre las técnicas usadas en estos diseños CSS, lea este artículo en el Centro de desarrolladores de Adobe:</p>
-        <p>Dado que todas las columnas son flotantes, este diseño usa una declaración clear:both en la regla .footer. Esta técnica de borrado fuerza a .container a conocer dónde terminan las columnas con el fin de mostrar cualquier borde o color de fondo que coloque en .container. Si su diseño exige la eliminación de .footer de .container, deberá usar un método de borrado diferente. El más fiable consiste en añadir una &lt;br class=&quot;clearfloat&quot; /&gt; o &lt;div  class=&quot;clearfloat&quot;&gt;&lt;/div&gt; tras la última columna flotante (pero antes de que se cierre .container). Esto proporcionará el mismo efecto de borrado.</p>
-
-      </div> 
-      <div id="tab3" style="display:none;">Tab 3 is always last!
-        <p>Tenga en cuenta que la CSS para estos diseños cuenta con numerosos comentarios. Si realiza la mayor parte de su trabajo en la vista Diseño, eche un vistazo al código para obtener sugerencias sobre cómo trabajar con la CSS para diseños fijos. Puede quitar estos comentarios antes de lanzar el sitio. Para obtener más información sobre las técnicas usadas en estos diseños CSS, lea este artículo en el Centro de desarrolladores de Adobe:</p>
-        <p>Dado que todas las columnas son flotantes, este diseño usa una declaración clear:both en la regla .footer. Esta técnica de borrado fuerza a .container a conocer dónde terminan las columnas con el fin de mostrar cualquier borde o color de fondo que coloque en .container. Si su diseño exige la eliminación de .footer de .container, deberá usar un método de borrado diferente. El más fiable consiste en añadir una &lt;br class=&quot;clearfloat&quot; /&gt; o &lt;div  class=&quot;clearfloat&quot;&gt;&lt;/div&gt; tras la última columna flotante (pero antes de que se cierre .container). Esto proporcionará el mismo efecto de borrado.</p>
-        <p>Tenga en cuenta que la CSS para estos diseños cuenta con numerosos comentarios. Si realiza la mayor parte de su trabajo en la vista Diseño, eche un vistazo al código para obtener sugerencias sobre cómo trabajar con la CSS para diseños fijos. Puede quitar estos comentarios antes de lanzar el sitio. Para obtener más información sobre las técnicas usadas en estos diseños CSS, lea este artículo en el Centro de desarrolladores de Adobe:</p>
-        <p>Dado que todas las columnas son flotantes, este diseño usa una declaración clear:both en la regla .footer. Esta técnica de borrado fuerza a .container a conocer dónde terminan las columnas con el fin de mostrar cualquier borde o color de fondo que coloque en .container. Si su diseño exige la eliminación de .footer de .container, deberá usar un método de borrado diferente. El más fiable consiste en añadir una &lt;br class=&quot;clearfloat&quot; /&gt; o &lt;div  class=&quot;clearfloat&quot;&gt;&lt;/div&gt; tras la última columna flotante (pero antes de que se cierre .container). Esto proporcionará el mismo efecto de borrado.</p>
 
 
-      </div> 
-      <div id="tab4" style="display:none;">Tab 4 Cuatrooooooo <p>Tenga en cuenta que la CSS para estos diseños cuenta con numerosos comentarios. Si realiza la mayor parte de su trabajo en la vista Diseño, eche un vistazo al código para obtener sugerencias sobre cómo trabajar con la CSS para diseños fijos. Puede quitar estos comentarios antes de lanzar el sitio. Para obtener más información sobre las técnicas usadas en estos diseños CSS, lea este artículo en el Centro de desarrolladores de Adobe:</p>
-        <p>Dado que todas las columnas son flotantes, este diseño usa una declaración clear:both en la regla .footer. Esta técnica de borrado fuerza a .container a conocer dónde terminan las columnas con el fin de mostrar cualquier borde o color de fondo que coloque en .container. Si su diseño exige la eliminación de .footer de .container, deberá usar un método de borrado diferente. El más fiable consiste en añadir una &lt;br class=&quot;clearfloat&quot; /&gt; o &lt;div  class=&quot;clearfloat&quot;&gt;&lt;/div&gt; tras la última columna flotante (pero antes de que se cierre .container). Esto proporcionará el mismo efecto de borrado.</p>
-        <p>Tenga en cuenta que la CSS para estos diseños cuenta con numerosos comentarios. Si realiza la mayor parte de su trabajo en la vista Diseño, eche un vistazo al código para obtener sugerencias sobre cómo trabajar con la CSS para diseños fijos. Puede quitar estos comentarios antes de lanzar el sitio. Para obtener más información sobre las técnicas usadas en estos diseños CSS, lea este artículo en el Centro de desarrolladores de Adobe:</p>
-        <p>Dado que todas las columnas son flotantes, este diseño usa una declaración clear:both en la regla .footer. Esta técnica de borrado fuerza a .container a conocer dónde terminan las columnas con el fin de mostrar cualquier borde o color de fondo que coloque en .container. Si su diseño exige la eliminación de .footer de .container, deberá usar un método de borrado diferente. El más fiable consiste en añadir una &lt;br class=&quot;clearfloat&quot; /&gt; o &lt;div  class=&quot;clearfloat&quot;&gt;&lt;/div&gt; tras la última columna flotante (pero antes de que se cierre .container). Esto proporcionará el mismo efecto de borrado.</p>
+<!--************************NAVIGATION TABS BY BOOTSTRAP **************************************************++-->
 
-      </div> 
-      <div id="tab5" class="tab-content">Tab Cincooooooo <br /><br />
+<div>
+ <!-- Nav tabs -->
+<ul class="nav nav-pills nav-justified">
+  <li class="active"><a href="#home" data-toggle="pill">Inicio</a></li>
+  <li><a href="#servicios" data-toggle="tab">Servicios</a></li>
+  <li><a href="#instituciones" data-toggle="tab">Instituciones</a></li>
+  <li><a href="#convenios" data-toggle="tab">Convenios</a></li>
+  <li><a href="#contactanos" data-toggle="tab">Contáctanos</a></li>
+  <li class="dropdown">
+    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+      Waiting <span class="caret"></span>
+    </a>
+    <ul class="dropdown-menu">
+       <li><a href="#subtab1" data-toggle="tab">Subtab 1</a></li>
+     <li><a href="#subtab2" data-toggle="tab">Subtab 2</a></li>
+    </ul>
+  </li>
+  
+</ul>
+
+<!-- Tab panes -->
+<div class="tab-content">
+  <div class="tab-pane fade in active" id="home">ESTA ES LA INFO DE home</div>
+  <div class="tab-pane fade" id="servicios">ESTA ES LA INFO DE servicios</div>
+  <div class="tab-pane fade" id="instituciones">ESTA ES LA INFO DE instituciones</div>
+  <div class="tab-pane fade" id="convenios">ESTA ES LA INFO DE convenios</div>
+  <div class="tab-pane fade" id="contactanos">ESTA ES LA INFO DE contactanos</div>
+  <div class="tab-pane fade" id="settings">ESTA ES LA INFO DE TAB 4</div>
+  <div class="tab-pane fade" id="subtab1">ESTA ES LA INFO DE SUBTAB 1</div>
+  <div class="tab-pane fade" id="subtab2">ESTA ES LA INFO DE SUBTAB 2</div>
+</div>
+</div>
+
+
+<!--************************NAVIGATION TABS BY BOOTSTRAP **************************************************++-->
+
+
+<!--MAPA-->
+
+
+
+        <div id="tab5" class="tab-content">Tab Cincooooooo <br /><br />
         <div id="map_canvas"></div>
         <!-- Do not change the code! -->
         <div id="wufoo-z17c1l8811i1dhl">
@@ -170,11 +193,11 @@ mapTypeId: google.maps.MapTypeId.ROADMAP
 
             
           </div> 
-        </div>
+       <!-- NAVIGATION MENU -->
 
 
-        <!-- NAVIGATION MENU -->
-        <div class="content">
+      <!--RSS AND CONTACT FORM-->
+      <div class="content">
           <h1>Instrucciones </h1>
 
           <p> Tenga en cuenta que si utiliza el inspector de propiedades para navegar hasta la imagen de su logotipo empleando el campo Origen (en lugar de quitar y reemplazar el marcador de posición), deberá quitar el fondo en línea y mostrar las propiedades. Estos estilos en línea sólo se utilizan para hacer que el marcador de posición del logotipo aparezca en los navegadores para fines de demostración. </p>
@@ -187,25 +210,43 @@ mapTypeId: google.maps.MapTypeId.ROADMAP
                   <span>Haz tu cotización</span>
                 </h4>
               </div>          
-              <!-- end .sidebar2 -->
             </div> 
 
             <div id="sidebar3">
               <h4>Fondos</h4>
               <p>Por naturaleza, el color de fondo de cualquier div sólo se muestra a lo largo del contenido. Si desea usar una línea divisora en lugar de un color, coloque un borde en el lado de la div de .content (pero sólo en el caso de que siempre vaya a tener más contenido).</p>
-              <!-- end .sidebar2 --></div>
-
             </div>
-            <!-- end .content -->
           </div>
+        </div>
+        <!--RSS AND CONTACT FORM-->
 
+        <!-- FOOTER -->
           <div class="footer">
             <p>Este .footer contiene la declaración position:relative; para dar a Internet Explorer 6 hasLayout para .footer y provocar que se borre correctamente. Si no es necesario proporcionar compatibilidad con IE6, puede quitarlo.</p>
-            <!-- end .footer -->
+            
           </div>
-          <!-- end .container -->
-        </div>
-        <!-- </div>-->
+        <!-- FOOTER -->
+          
+    </div><!-- end .container -->
+        
+
+ <script>
+  $(function () {
+    $('#myTab a:last').tab('show')
+  })
+  
+  $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+  e.target // activated tab
+  e.relatedTarget // previous tab
+});
+
+$('.dropdown-toggle').dropdown();
+</script>
+
+
+<script src="scripts/bootstrap.min.js"></script>
+
+
 
       </body>
       </html>
