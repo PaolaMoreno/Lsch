@@ -46,29 +46,42 @@ a img { /* este selector elimina el borde azul predeterminado que se muestra en 
  	display: inline-block;
  	margin-bottom: 2%;
  }
-
+p{
+	margin: 0;
+	padding: 0;
+	line-height: 120%;
+}
  #slogan{
   margin: 20px 20px 0;
   vertical-align: text-bottom;
-  font-size: 60px;
+  
   font-family: 'Engagement', cursive;
 color: rgb(14, 105, 144);
 display: inline-block;
 }
 
 #slogan1 {
-	
 	display: inline-block;
 	vertical-align: bottom;
 	margin-bottom: 4%;
-	
+	font-family: 'Engagement', cursive;
+	font-size: 50px;
+	color: #B20808;
+}
+
+#slogan1 p:first-child{
+
+
+	font-family: 'Engagement', cursive;
+	font-size: 100px;
+
 }
 
 #slogan1 img{
 max-width: 100%;
 	height: auto;
 	width: auto;
-	
+
 }
 
 #map_canvas {
