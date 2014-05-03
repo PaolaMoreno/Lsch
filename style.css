@@ -64,9 +64,10 @@ display: inline-block;
 	display: inline-block;
 	vertical-align: bottom;
 	margin-bottom: 4%;
-	font-family: 'Engagement', cursive;
-	font-size: 50px;
-	color: #B20808;
+	font-family: verdana;
+	font-size: 21px;
+	color: rgb(14, 105, 144);
+	text-align: left;
 }
 
 #slogan1 p:first-child{
@@ -74,6 +75,7 @@ display: inline-block;
 
 	font-family: 'Engagement', cursive;
 	font-size: 100px;
+	color: #B20808;
 
 }
 
