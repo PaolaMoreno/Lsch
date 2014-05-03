@@ -64,10 +64,10 @@ display: inline-block;
 	display: inline-block;
 	vertical-align: bottom;
 	margin-bottom: 4%;
-	font-family: verdana;
-	font-size: 21px;
-	color: rgb(14, 105, 144);
-	text-align: left;
+	font-family: 'Engagement', cursive;
+	font-size: 40px;
+	color: black;
+	
 }
 
 #slogan1 p:first-child{
