@@ -63,18 +63,8 @@ mapTypeId: google.maps.MapTypeId.ROADMAP
 
       
 
-      $('.tab-content').not(':first').hide();
-      $('.tab').click(function(e){
-        e.preventDefault();
-        $('.tab-content').hide();
-        $($(this).attr('href')).show();
-        if($(this).attr('href')=='#tab5'){
-          //we have to set center for map after resize, but we need to know center BEFORE we resize it
-          var center = map.getCenter();
-          google.maps.event.trigger(map, "resize"); //this fix the problem with not completely map
-          map.setCenter(center);
-        }
-      });
+      //$('.tab-content').not(':first').hide();
+     
 
 
     });
@@ -113,7 +103,12 @@ mapTypeId: google.maps.MapTypeId.ROADMAP
         <div id="wrapper">
          <div class="rslides_container">
           <ul class="rslides" id="slider1">
-            <li><img src="images/1.png" alt=""></li>
+            <li><p style="font-size: 30px; margin-left: auto; margin-right: auto; margin-top: 10px; 
+              margin-bottom: 0; background-color: rgba(143,210,231,0.4); color:white;">
+              Aprende Inglés con los mejores!</p>
+              <img src="images/1.png" alt="" />
+            
+            </li>
             <li><img src="images/2.png" alt=""></li>
             <li><img src="images/3.png" alt=""></li>
             <li><img src="images/4.jpg" alt=""></li>
@@ -152,31 +147,19 @@ mapTypeId: google.maps.MapTypeId.ROADMAP
 <div class="tab-content">
   <div class="tab-pane fade in active" id="home">
     <br />
-    <p style="font-size: 30px; background-color: rgba(143,210,231,0.4);">QUIENES SOMOS</p> <br />
+    <p style="font-size: 30px; background-color: rgba(143,210,231,0.4); color:white;">QUIENES SOMOS</p> <br />
     <p>Como nuestra población de estudiantes es grande, debido a que hacemos presencia en las universidades y colegios de los diferentes departamentos del sur occidente colombiano, nos comprometemos a hacer publicidad marcada del instituto CAMBRIDGE como la academia más reconocida para el aprendizaje del idioma inglés dentro del país y para la presentación de los exámenes internacionales que representa el BRITISH COUNCIL en Colombia.<p> <br>
     <p>Como nuestra población de estudiantes es grande, debido a que hacemos presencia en las universidades y colegios de los diferentes departamentos del sur occidente colombiano, nos comprometemos a hacer publicidad marcada del instituto CAMBRIDGE como la academia más reconocida para el aprendizaje del idioma inglés dentro del país y para la presentación de los exámenes internacionales que representa el BRITISH COUNCIL en Colombia.<p> <br>
     <p>Como nuestra población de estudiantes es grande, debido a que hacemos presencia en las universidades y colegios de los diferentes departamentos del sur occidente colombiano, nos comprometemos a hacer publicidad marcada del instituto CAMBRIDGE como la academia más reconocida para el aprendizaje del idioma inglés dentro del país y para la presentación de los exámenes internacionales que representa el BRITISH COUNCIL en Colombia.<p></div>
   <div class="tab-pane fade" id="servicios">ESTA ES LA INFO DE servicios</div>
   <div class="tab-pane fade" id="instituciones">ESTA ES LA INFO DE instituciones</div>
   <div class="tab-pane fade" id="convenios">ESTA ES LA INFO DE convenios</div>
-  <div class="tab-pane fade" id="contactanos">ESTA ES LA INFO DE contactanos</div>
-  <div class="tab-pane fade" id="settings">ESTA ES LA INFO DE TAB 4</div>
-  <div class="tab-pane fade" id="subtab1">ESTA ES LA INFO DE SUBTAB 1</div>
-  <div class="tab-pane fade" id="subtab2">ESTA ES LA INFO DE SUBTAB 2</div>
-</div>
-</div>
+  <div class="tab-pane fade" id="contactanos"><p>ESTA ES LA INFO DE contactanos</p>
+    <div id="tab5" class="tab-content">Tab Cincooooooo <br /><br />
 
-
-<!--************************NAVIGATION TABS BY BOOTSTRAP **************************************************++-->
-
-
-<!--MAPA-->
-
-
-
-        <div id="tab5" class="tab-content">Tab Cincooooooo <br /><br />
         <div id="map_canvas"></div>
         <!-- Do not change the code! -->
+        
         <div id="wufoo-z17c1l8811i1dhl">
           Fill out my <a href="https://paolamastaiza.wufoo.com/forms/z17c1l8811i1dhl">online form</a>.
         </div>
@@ -196,11 +179,37 @@ mapTypeId: google.maps.MapTypeId.ROADMAP
               var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
               try { z17c1l8811i1dhl = new WufooForm();z17c1l8811i1dhl.initialize(options);z17c1l8811i1dhl.display(); } catch (e) {}};
               var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
-            })(document, 'script');</script>
+            })(document, 'script');
+            </script>
             <!-- Do not change the code! -->
 
             
           </div> 
+
+
+
+
+
+
+
+
+
+  </div>
+  <div class="tab-pane fade" id="settings">ESTA ES LA INFO DE TAB 4</div>
+  <div class="tab-pane fade" id="subtab1">ESTA ES LA INFO DE SUBTAB 1</div>
+  <div class="tab-pane fade" id="subtab2">ESTA ES LA INFO DE SUBTAB 2</div>
+
+</div>
+
+
+<!--************************NAVIGATION TABS BY BOOTSTRAP **************************************************++-->
+
+
+<!--MAPA-->
+
+
+
+        
        <!-- NAVIGATION MENU -->
 
 
@@ -236,7 +245,7 @@ mapTypeId: google.maps.MapTypeId.ROADMAP
         <!-- FOOTER -->
           
     </div><!-- end .container -->
-        
+        <script src="scripts/bootstrap.min.js"></script>
 
  <script>
   $(function () {
@@ -252,7 +261,7 @@ $('.dropdown-toggle').dropdown();
 </script>
 
 
-<script src="scripts/bootstrap.min.js"></script>
+
 
 
 

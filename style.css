@@ -68,6 +68,7 @@ display: inline-block;
 	font-size: 40px;
 	color: black;
 	
+	
 }
 
 #slogan1 p:first-child{
@@ -87,14 +88,15 @@ max-width: 100%;
 }
 
 #map_canvas {
-        width: 450px;
+        width: 40%;
         height: 350px;
         margin-right: 50px;
         margin-left: 0px;
         padding-top: 0px;
         padding-left: 0px;
         border-top: 0px;
-        display: inline-block;
+       display: inline-block;
+       margin-left: 5%;*/
 
       
       }
@@ -123,6 +125,13 @@ color: grey;
 	border-width: 1px;
 	border-top-width: 2px;
 	
+}
+
+#wufoo-z17c1l8811i1dhl{
+width:45%; 
+display:inline-block;
+/*vertical-align: text-bottom;
+margin-left: 5%;*/
 }
 
 
@@ -220,7 +229,64 @@ color: grey;
 
 /*ESTILOS DEL MENU JQUERY*/
 
-#tab5{
+.usual {
+  background:white;
+  color:#111;
+ 
+  max-width:1000px;
+  border-bottom:1px solid #222;
+  margin:0 auto;
+}
+.usual li { 
+  
+  float:left; 
+  width: 200px; 
+  height: 40px;
+  text-align: center; 
+}
+.usual ul a {
+  display:block;
+  padding:6px 10px;
+  text-decoration:none!important;
+  margin:1px;
+  margin-left:0;
+  font:18px Verdana;
+  color:#FFF;
+  background:#444;
+}
+.usual ul a:hover {
+  color:#FFF;
+  background:#111;
+  }
+.usual ul a.selected {
+  margin-bottom:0;
+  color:#000;
+  background:snow;
+  border-bottom:1px solid snow;
+  cursor:default;
+  }
+.usual div {
+  padding:10px 10px 8px 10px;
+  *padding-top:3px;
+  *margin-top:-15px;
+  clear:left;
+  background:snow;
+  font:10pt Georgia;
+}
+.usual div a { color:#000; font-weight:bold; }
 
-	width: 1000px;
+#usual2 { background:#0A0A0A; border:1px solid #1A1A1A; }
+#usual2 a { background:#222; }
+#usual2 a:hover { background:#000; }
+#usual2 a.selected { background:snow; }
+
+
+
+
+
+
+#tab5{
+	display:inline-block;
+width: 1000px;
+	/*width: 100%*/
 }
