@@ -64,7 +64,17 @@ mapTypeId: google.maps.MapTypeId.ROADMAP
       
 
       //$('.tab-content').not(':first').hide();
-     
+      $('.tab').click(function(e){
+        e.preventDefault();
+        $('.tab-pane.fade').hide();
+        $($(this).attr('href')).show();
+        if($(this).attr('href')=='#contactanos'){
+          //we have to set center for map after resize, but we need to know center BEFORE we resize it
+          var center = map.getCenter();
+          google.maps.event.trigger(map, "resize"); //this fix the problem with not completely map
+          map.setCenter(center);
+        }
+      });
 
 
     });
@@ -127,17 +137,17 @@ mapTypeId: google.maps.MapTypeId.ROADMAP
  <!-- Nav tabs -->
 <ul class="nav nav-pills nav-justified">
   <li class="active"><a href="#home" data-toggle="pill">Inicio</a></li>
-  <li><a href="#servicios" data-toggle="tab">Servicios</a></li>
-  <li><a href="#instituciones" data-toggle="tab">Instituciones</a></li>
-  <li><a href="#convenios" data-toggle="tab">Convenios</a></li>
-  <li><a href="#contactanos" data-toggle="tab">Contáctanos</a></li>
+  <li><a href="#servicios" class="tab" data-toggle="tab">Servicios</a></li>
+  <li><a href="#instituciones" class="tab" data-toggle="tab">Instituciones</a></li>
+  <li><a href="#convenios" class="tab" data-toggle="tab" >Convenios</a></li>
+  <li><a href="#contactanos" class="tab" data-toggle="tab" style="display:block;">Contáctanos</a></li>
   <li class="dropdown">
     <a class="dropdown-toggle" data-toggle="dropdown" href="#">
       Waiting <span class="caret"></span>
     </a>
     <ul class="dropdown-menu">
-       <li><a href="#subtab1" data-toggle="tab">Subtab 1</a></li>
-     <li><a href="#subtab2" data-toggle="tab">Subtab 2</a></li>
+       <li><a href="#subtab1" class="tab" data-toggle="tab" style="display:none;">Subtab 1</a></li>
+     <li><a href="#subtab2" class="tab" data-toggle="tab" style="display:none;">Subtab 2</a></li>
     </ul>
   </li>
   
@@ -145,17 +155,17 @@ mapTypeId: google.maps.MapTypeId.ROADMAP
 
 <!-- Tab panes -->
 <div class="tab-content">
-  <div class="tab-pane fade in active" id="home">
+  <div class="tab-pane fade in active" id="home" style="display:none;">
     <br />
     <p style="font-size: 30px; background-color: rgba(143,210,231,0.4); color:white;">QUIENES SOMOS</p> <br />
     <p>Como nuestra población de estudiantes es grande, debido a que hacemos presencia en las universidades y colegios de los diferentes departamentos del sur occidente colombiano, nos comprometemos a hacer publicidad marcada del instituto CAMBRIDGE como la academia más reconocida para el aprendizaje del idioma inglés dentro del país y para la presentación de los exámenes internacionales que representa el BRITISH COUNCIL en Colombia.<p> <br>
     <p>Como nuestra población de estudiantes es grande, debido a que hacemos presencia en las universidades y colegios de los diferentes departamentos del sur occidente colombiano, nos comprometemos a hacer publicidad marcada del instituto CAMBRIDGE como la academia más reconocida para el aprendizaje del idioma inglés dentro del país y para la presentación de los exámenes internacionales que representa el BRITISH COUNCIL en Colombia.<p> <br>
     <p>Como nuestra población de estudiantes es grande, debido a que hacemos presencia en las universidades y colegios de los diferentes departamentos del sur occidente colombiano, nos comprometemos a hacer publicidad marcada del instituto CAMBRIDGE como la academia más reconocida para el aprendizaje del idioma inglés dentro del país y para la presentación de los exámenes internacionales que representa el BRITISH COUNCIL en Colombia.<p></div>
-  <div class="tab-pane fade" id="servicios">ESTA ES LA INFO DE servicios</div>
-  <div class="tab-pane fade" id="instituciones">ESTA ES LA INFO DE instituciones</div>
-  <div class="tab-pane fade" id="convenios">ESTA ES LA INFO DE convenios</div>
-  <div class="tab-pane fade" id="contactanos"><p>ESTA ES LA INFO DE contactanos</p>
-    <div id="tab5" class="tab-content">Tab Cincooooooo <br /><br />
+  <div class="tab-pane fade" id="servicios" style="display:none;">ESTA ES LA INFO DE servicios</div>
+  <div class="tab-pane fade" id="instituciones" style="display:none;">ESTA ES LA INFO DE instituciones</div>
+  <div class="tab-pane fade" id="convenios" style="display:none;">ESTA ES LA INFO DE convenios</div>
+  <div class="tab-pane fade" id="contactanos" style="display:none;"><p>ESTA ES LA INFO DE contactanos</p>
+    <div id="tab5" class="tab-content" style="display:block;">Tab Cincooooooo <br /><br />
 
         <div id="map_canvas"></div>
         <!-- Do not change the code! -->
